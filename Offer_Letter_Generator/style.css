@@ -1,0 +1,165 @@
+:root{
+    --accent: #c8975a;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f0ede8;
+}
+
+header {
+  background: #1a1a2e;
+  color: white;
+  padding: 20px;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  height: 90vh;
+}
+
+.panel {
+  background: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.preview {
+  background: #e8e5e0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+.letter {
+  background: white;
+  width: 100%;
+  max-width: 650px;
+  min-height: 800px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.letter-header {
+  background: #1a1a2e;
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.badge {
+  background: var(--accent);
+  color: white;
+  font-size: 0.7rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.letter-body {
+  padding: 36px 40px;
+  line-height: 1.8;
+}
+
+#prev-greeting {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+#prev-intro {
+  margin-bottom: 24px;
+  color: #444;
+}
+
+.details-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.88rem;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.signature {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1.5px solid #1a1a2e;
+  display: inline-block;
+  font-style: italic;
+}
+.panel h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: #c8975a;
+}
+.colors {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.dot {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot:hover {
+  transform: scale(1.2);
+}
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #c8975a;
+}
+
+@media print {
+  .panel { display: none; }
+  .preview { padding: 0; background: white; }
+  .letter { box-shadow: none; }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Offer Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Offer Letter Generator</h1>
+  </header>
+
+  <div class="workspace">
+    <div class="panel">
+
+  <h2>Fill Details</h2>
+
+  <label>Company Name</label>
+  <input type="text" id="companyName" value="Stackora Inc." oninput="update()">
+
+  <label>Candidate Name</label>
+  <input type="text" id="candName" value="Yadhukrishna C" oninput="update()">
+
+  <label>Job Title</label>
+  <input type="text" id="jobTitle" value="MERN Developer" oninput="update()">
+
+  <label>Salary</label>
+  <input type="text" id="salary" value="120,000" oninput="update()">
+
+  <label>Start Date</label>
+  <input type="date" id="startDate" value="2026-06-15" oninput="update()">
+  <label>Accent Color</label>
+<div class="colors">
+  <div class="dot" style="background:#c8975a" onclick="setColor('#c8975a')"></div>
+  <div class="dot" style="background:#3d7a5c" onclick="setColor('#3d7a5c')"></div>
+  <div class="dot" style="background:#5a6ec8" onclick="setColor('#5a6ec8')"></div>
+  <div class="dot" style="background:#c84a3d" onclick="setColor('#c84a3d')"></div>
+</div>
+
+  <label>HR Name</label>
+  <input type="text" id="hrname" value="Sarah Mitchell" oninput="update()">
+
+  <button onclick="window.print()">
+    Print / Save as PDF
+  </button>
+
+</div>
+    <div class="preview">
+  <div class="letter">
+
+    <div class="letter-header">
+      <span id="prev-company">Nexora Inc.</span>
+      <span class="badge">Offer Letter</span>
+    </div>
+
+    <div class="letter-body">
+      <p id="prev-greeting">Dear Ahmed Ali,</p>
+      <p id="prev-intro">We are pleased to offer you the position of Product Designer.</p>
+
+      <div class="details-box">
+        <div class="row">
+          <span>Position</span>
+          <strong id="prev-pos">Product Designer</strong>
+        </div>
+        <div class="row">
+          <span>Salary</span>
+          <strong id="prev-salary">$120,000</strong>
+        </div>
+        <div class="row">
+          <span>Start Date</span>
+          <strong id="prev-start">June 15, 2026</strong>
+        </div>
+      </div>
+
+      <p>We look forward to having you on the team.</p>
+
+      <div class="signature">
+        <p id="prev-sig">HR Manager</p>
+        <small>Authorized Signatory</small>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
