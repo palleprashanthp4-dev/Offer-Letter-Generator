@@ -15,7 +15,9 @@ pure HTML, CSS and JavaScript.
 - Vanilla JavaScript (DOM)
 
 ## Live Demo
-[Click here to view live](https://yadhukrishna-c.github.io/offer-letter-genarator/)
+
+🔗 **[Explore Offer Letter Generator](https://yadhukrishna-c.github.io/offer-letter-genarator/)**
+
 
 ## What I Learned
 - CSS Grid layout
